@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
         <input type="text" class="form-control <?php echo !$nameErr ?:
           'is-invalid'; ?>" id="name" name="name" placeholder="Enter your name" value="<?php echo $name; ?>">
         <div id="validationServerFeedback" class="invalid-feedback">
-          Please provide a valid name.
+          Please provide a valid name
         </div>
       </div>
       <div class="mb-3">
