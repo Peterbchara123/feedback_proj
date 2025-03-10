@@ -74,6 +74,7 @@ if (isset($_POST['submit'])) {
         <input type="email" class="form-control <?php echo !$emailErr ?:
           'is-invalid'; ?>" id="email" name="email" placeholder="Enter your email" value="<?php echo $email; ?>">
       </div>
+      test 
       <div class="mb-3">
         <label for="body" class="form-label">Feedback</label>
         <textarea class="form-control <?php echo !$bodyErr ?:
