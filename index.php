@@ -96,6 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Overlay Fix</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -105,77 +106,79 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             }
 </style>
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent  position-absolute top-0 start-0 w-100 z-3">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-camera-fill"></i> Traversy Media</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item "><a class="nav-link"href = "index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Add_feedback.php">Add Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Check_feedback.php">Check Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100 z-3">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#"><i class="bi bi-camera-fill"></i> Traversy Media</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Add_feedback.php">Add Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="Check_feedback.php">Check Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     
     <section class="container-fluid p-0">
-        <div class="position-relative vh-100"
-            style="background: url('image/landscape2.jpg') center/cover no-repeat; width: 100%;">
-            
-            <!-- Text Overlay -->
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-                <h1 class="display-3 fw-bold">Welcome to Land-Site</h1>
-                <p class="lead">Transforming outdoor spaces with expert landscaping services.</p>
-            </div>
+    <div class="position-relative d-flex align-items-center justify-content-center text-center text-white vh-100"
+         style="background-image: url('image/landscape2.jpg'); background-size: cover; background-position: center;">
 
+        <!-- Container for text -->
+        <div class="container px-4">
+            <h1 class="display-4 display-md-3 fw-bold">Welcome to Land-Site</h1>
+            <p class="lead">Transforming outdoor spaces with expert landscaping services.</p>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <section id="gallery" class="bg-secondary bg-opacity-25 py-5">
     <div class="container mt-5">
         <h2 class="text-center my-4"><i class="bi bi-signpost-split"></i> A glimpse of our work!!</h2>
-        <div class="row g-2">
-
+        <div class="row g-3 p-2">
 
             <!-- Images Loop -->
-            <div class="col-md-2 col-sm-6" onclick="openModal(this)">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12" onclick="openModal(this)">
                 <div class="ratio ratio-16x9">
-                    <img src="image/im1.jpg" class="img-fluid" alt="Mountain">
+                    <img src="image/im1.jpg" class="img-fluid rounded shadow-lg" alt="Mountain">
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6" onclick="openModal(this)">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12" onclick="openModal(this)">
                 <div class="ratio ratio-16x9">
-                    <img src="image/im2.jpg" class="img-fluid" alt="">
+                    <img src="image/im2.jpg" class="img-fluid rounded shadow-lg" alt="Scenic View">
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6" onclick="openModal(this)">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12" onclick="openModal(this)">
                 <div class="ratio ratio-16x9">
-                    <img src="image/im3.jpg" class="img-fluid shadow-lg " alt="">
+                    <img src="image/im3.jpg" class="img-fluid rounded shadow-lg" alt="Nature">
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6" onclick="openModal(this)">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12" onclick="openModal(this)">
                 <div class="ratio ratio-16x9">
-                    <img src="image/im4.jpg" class="img-fluid shadow-lg " alt="">
+                    <img src="image/im4.jpg" class="img-fluid rounded shadow-lg" alt="Sunset">
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6" onclick="openModal(this)">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12" onclick="openModal(this)">
                 <div class="ratio ratio-16x9">
-                    <img src="image/im5.jpg" class="img-fluid shadow-lg " alt="">
+                    <img src="image/im5.jpg" class="img-fluid rounded shadow-lg" alt="Forest">
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6" onclick="openModal(this)">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12" onclick="openModal(this)">
                 <div class="ratio ratio-16x9">
-                    <img src="image/im6.jpg" class="img-fluid shadow-lg " alt="">
+                    <img src="image/im6.jpg" class="img-fluid rounded shadow-lg" alt="Beach">
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- modal lightbox -->
 
@@ -194,12 +197,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-<footer class="bg-dark text-white text-center py-4">
-  <p class="mb-2">For any inquiries, feel free to contact us.</p>
-  <button class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas">
-    Contact Us
-  </button>
+<footer class="bg-dark text-white text-center py-3 py-md-4">
+  <div class="container">
+    <p class="mb-2">For any inquiries, feel free to contact us.</p>
+    <button class="btn btn-outline-primary btn-sm btn-md-lg" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas">
+      Contact Us
+    </button>
+  </div>
 </footer>
+
 
 <!-- Offcanvas Contact Form -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="contactOffcanvas">
